@@ -1,0 +1,147 @@
+{
+	"info": {
+		"_postman_id": "5190965b-efad-4f72-ab30-4698206bbc64",
+		"name": "Note Demo API",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29874634"
+	},
+	"item": [
+		{
+			"name": "Create a new note",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"\",\r\n  \"content\": \"\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/demo/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"demo",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve all notes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8888/demo/notes",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"demo",
+						"notes"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Retrieve a specific note by ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"content\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/demo/notes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"demo",
+						"notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update a specific note",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"content\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/demo/notes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"demo",
+						"notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete a specific note",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"title\": \"string\",\r\n  \"content\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8888/demo/notes/1",
+					"host": [
+						"localhost"
+					],
+					"port": "8888",
+					"path": [
+						"demo",
+						"notes",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
